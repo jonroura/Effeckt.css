@@ -47,6 +47,17 @@
   }
 }
 
+// tooltip bubble
+.effeckt-tooltip.jon[data-effeckt-type="bubble"]{
+  &::after { // text of tooltip
+
+    background: $effeckt-tooltip-background-jon;
+    color: $effeckt-tooltip-forground-jon;
+
+  }
+}
+
+
 // bubble top and bottom
 .effeckt-tooltip[data-effeckt-type="bubble"][data-effeckt-position="top"],
 .effeckt-tooltip[data-effeckt-type="bubble"][data-effeckt-position="bottom"] {
@@ -85,7 +96,7 @@
   }
 
   &::before {
-    border-bottom: $effeckt-tooltip-arrow-size solid $effeckt-tooltip-background;
+    border-bottom: $effeckt-tooltip-arrow-size solid $effeckt-tooltip-background-jon;
     border-left: $effeckt-tooltip-arrow-size solid transparent;
     border-right: $effeckt-tooltip-arrow-size solid transparent;
     margin-top: -($effeckt-tooltip-arrow-size - 1); // one less pixel to prevent occational 1px gap
